@@ -1,0 +1,10 @@
+@mixin sizes() {
+	$scales: fibonacci( 6, .382 .618 );
+	$sizes: 'xsmall', 'small', 'default', 'medium', 'large', 'xlarge';
+
+	@each $i in $scales {
+		&[size~="#{nth( $sizes, index( $scales, $i ) )}"] {
+			font-size: $i * 1rem;
+		}
+	}
+}

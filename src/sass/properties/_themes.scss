@@ -1,0 +1,59 @@
+@mixin themes( $map ) {
+	@each $name, $theme in $map {
+		&[theme="#{$name}"] {
+		    @if map-has-key( $theme, 'link' ) {
+				&:link {
+					border-color: nth( map-get( $theme, 'link' ), 1 );
+					background-color: nth( map-get( $theme, 'link' ), 2 );
+					color: nth( map-get( $theme, 'link' ), 3 ); 
+				}
+		    }
+		    @if map-has-key( $theme, 'visited' ) {
+				&:visited {
+					border-color: nth( map-get( $theme, 'visited' ), 1 );
+					background-color: nth( map-get( $theme, 'visited' ), 2 );
+					color: nth( map-get( $theme, 'visited' ), 3 ); 
+				}
+		    }
+		    @if map-has-key( $theme, 'hover' ) {
+				&:hover,
+				&:focus {
+					border-color: nth( map-get( $theme, 'hover' ), 1 );
+					background-color: nth( map-get( $theme, 'hover' ), 2 );
+					color: nth( map-get( $theme, 'hover' ), 3 );; 
+				}
+		    }
+		    @if map-has-key( $theme, 'active' ) {
+				&:active {
+					border-color: nth( map-get( $theme, 'active' ), 1 );
+					background-color: nth( map-get( $theme, 'active' ), 2 );
+					color: nth( map-get( $theme, 'active' ), 3 ); 
+				}
+			}
+			
+			&[modifier~="border"] {
+			    @if map-has-key( $theme, 'link' ) {
+					&:link {
+						color: nth( map-get( $theme, 'link' ), 1 ); 
+					}
+			    }
+			    @if map-has-key( $theme, 'visited' ) {
+					&:visited {
+						color: nth( map-get( $theme, 'visited' ), 1 ); 
+					}
+			    }
+			    @if map-has-key( $theme, 'hover' ) {
+					&:hover,
+					&:focus {
+						color: nth( map-get( $theme, 'hover' ), 1 );; 
+					}
+			    }
+			    @if map-has-key( $theme, 'active' ) {
+					&:active {
+						color: nth( map-get( $theme, 'active' ), 1 ); 
+					}
+				}
+			}
+		}
+	}
+}
