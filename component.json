@@ -1,0 +1,29 @@
+{
+  "name": "assembler-buttons",
+  "description": "A buttons component built for the assembler framework",
+  "version": "0.1.0",
+  "keywords": [
+    "responsive",
+    "css",
+    "sass",
+    "buttons",
+    "component",
+    "mobile-first"
+  ],
+  "main": [
+    "./dist/assembler-buttons.css",
+    "./dist/assembler-buttons.css.map",
+    "./dist/assembler-buttons.min.css",
+    "./dist/assembler-buttons.min.css.map"
+  ],
+  "styles": [
+    [
+      "./dist/assembler-buttons.css",
+      "./dist/assembler-buttons.css.map",
+      "./dist/assembler-buttons.min.css",
+      "./dist/assembler-buttons.min.css.map"
+    ]
+  ],
+  "demo": "https://AssemblerUI.github.io/assembler-buttons",
+  "license": "MIT"
+}
