@@ -91,10 +91,11 @@
 
 <!-- Title -->
 {% if site.github %}
-	<link rel="stylesheet" href="/styles/assembler-buttons.min.css" />
+	<link rel="stylesheet" href="{{ site.github.url }}/styles/assembler-buttons.min.css" />
+	<link rel="stylesheet" href="{{ site.github.url }}/styles/docs.css" />
 {% else %}
 	<link rel="stylesheet" href="/styles/assembler-buttons.css" />
+	<link rel="stylesheet" href="/styles/docs.css" />
 {% endif %}
-<link rel="stylesheet" href="/styles/docs.css" />
 
 <title>{{ site.github.project_title }} - {{ site.github.project_tagline }}</title>
