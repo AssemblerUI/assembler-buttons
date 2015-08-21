@@ -1,0 +1,39 @@
+@mixin default( $theme ) {
+	&,
+	&:link,
+	&:visited {
+		display: inline-block;
+		margin-bottom: .5em;
+		border-radius: .3em;
+		border-style: solid;
+		border-width: 1px;  
+		padding: 1em .75em;
+		letter-spacing: .15em;
+		text-decoration: none; 
+	}
+	&:link {
+		border-color: nth( map-get( $theme, 'link' ), 1 );
+		background-color: nth( map-get( $theme, 'link' ), 2 );
+		color: nth( map-get( $theme, 'link' ), 3 ); 
+		transition: border .4s, background-color .4s, color .4s;
+	}
+	&:visited {
+		border-color: nth( map-get( $theme, 'visited' ), 1 );
+		background-color: nth( map-get( $theme, 'visited' ), 2 );
+		color: nth( map-get( $theme, 'visited' ), 3 ); 
+		transition: border .4s, background-color .4s, color .4s;
+	}
+	&:hover,
+	&:focus {
+		border-color: nth( map-get( $theme, 'hover' ), 1 );
+		background-color: nth( map-get( $theme, 'hover' ), 2 );
+		color: nth( map-get( $theme, 'hover' ), 3 );; 
+		transition: border .3s, background-color .3s, color .3s;
+	}
+	&:active {
+		border-color: nth( map-get( $theme, 'active' ), 1 );
+		background-color: nth( map-get( $theme, 'active' ), 2 );
+		color: nth( map-get( $theme, 'active' ), 3 ); 
+		transition: border .3s, background-color .3s, color .3s;
+	}
+}

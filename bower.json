@@ -1,0 +1,47 @@
+{
+  "name": "assembler-buttons",
+  "description": "A buttons component built for the Assembler framework",
+  "authors": [
+    "Chris Newton <chrisohpedia@gmail.com> (http://chrisnewton.me/about)"
+  ],
+  "version": "0.1.0",
+  "keywords": [
+    "responsive",
+    "css",
+    "sass",
+    "buttons",
+    "component",
+    "mobile-first"
+  ],
+  "main": [
+    "./dist/assembler-buttons.css",
+    "./dist/assembler-buttons.css.map",
+    "./dist/assembler-buttons.min.css",
+    "./dist/assembler-buttons.min.css.map"
+  ],
+  "homepage": "https://AssemblerUI.github.io/assembler-buttons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AssemblerUI/assembler-buttons.git"
+  },
+  "license": "MIT",
+  "ignore": [
+    "/.*",
+    "node_modules",
+    "bower_components",
+    "docs",
+    "tasks",
+    "_config.yml",
+    "browserlist",
+    "Gemfile",
+    "Gemfile.lock",
+    "Gruntfile.js",
+    "CONTRIBUTING.md",
+    "OWNERS.md",
+    "component.json"
+  ],
+  "devDependencies": {
+    "assembler-functions": "~0.3.1",
+    "assembler-mixins": "~0.2.1"
+  }
+}

@@ -1,0 +1,32 @@
+@mixin modifiers() {
+	&[modifier~="full"] {
+		&,
+		&:link {
+			display: block;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+		@media screen and (min-width: 32em) {
+			max-width: 16em;
+		}
+	}
+	&[modifier~="square"] {
+		border-radius: 0;
+	}
+	&[modifier~="oval"] {
+		border-radius: 2em;
+	}
+	&[modifier~="border"] {
+		border-width: 2px;
+		&:link,
+		&:visited,
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: transparent;
+		}
+	}
+}
+

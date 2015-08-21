@@ -1,0 +1,13 @@
+$selector: 'button';
+$themes: (
+	'black' : $black,
+	'blue' : $blue,
+	'gray' : $grayscale
+);
+
+$default: (
+	'link' : rgb(17,17,17) rgba(255,255,255,0) rgb(17,17,17),
+	'visited' : rgb(17,17,17) rgba(255,255,255,0) rgb(17,17,17),
+	'hover' : rgb(0,116,217) rgba(255,255,255,0) rgb(0,116,217),
+	'active' : rgb(17,17,17) rgba(255,255,255,0) rgb(0,116,217)
+);
