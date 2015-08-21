@@ -1,0 +1,326 @@
+/*
+ * Capitalize string
+ *
+ * @param [string] $str
+ *
+ * @return [string]
+ */
+/*
+ * Camel case a string
+ *
+ * @depends [strings] _capitalize.scss
+ *
+ * @param [string] $str
+ *
+ * @return [string]
+ */
+/* Capitalize each word in string
+ *
+ * @depends [strings] _capitalize.scss
+ *
+ * @param [string] $str
+ *
+ * @return [string]
+ */
+/*
+ * Replace all occurrences of the search string with the replacement string
+ *
+ * @param [string] $str
+ * @param [string] $search - the string to search
+ * @param [string] $replace - the replacement string
+ *
+ * @return [string]
+ */
+/*
+ * Return whether $value is contained in $list
+ *
+ * @param [list] $list
+ * @param [$value] $value
+ *
+ * @return [boolean]
+ */
+/*
+ * Font Size
+ *
+ * @depends: [misc] _get-opposition-direction
+ *
+ * @param: [string] $direction - one of 4 directions (top|right|bottom|left)
+ *
+ * @returns: [string]
+ *
+ */
+/*
+ * Font Size
+ *
+ * @depends: [misc] _get-opposition-direction
+ *
+ * @param: [string] $direction - one of 4 directions (top|right|bottom|left)
+ *
+ * @returns: [css declaration]
+ *
+ */
+/*
+ * Print a Map
+ *
+ * @param: a map
+ *
+ * @return: the contents of the map as a CSS declaration
+ *
+ * Usage
+ * .element {
+ *     @include print((
+ *         margin: 0 auto,
+ *         max-width: 50%,
+ *         overflow: hidden
+ *     ));
+ * }
+ *
+ * Example without use of print()
+ * $configuration: (
+ *     padding: 1em,
+ *     margin: 0 1em,
+ *     color: grey
+ * );
+ * .element {
+ *     color: map-get( $configuration, color );
+ *     padding: map-get( $configuration, padding );
+ *     margin: map-get( $configuration, margin );
+ *
+ *     &::before {
+ *         background-color: map-get( $configuration, color );
+ *     }
+ * }
+ *
+ * Example with use of print()
+ * .element {
+ *     @include print( $configuration );
+ *
+ *     &::before {
+ *         background-color: map-get( $configuration, color );
+ *     }
+ * }
+ */
+/*
+ * Flip mixin
+ *
+ */
+/*
+ * Rotate mixin
+ *
+ * Could be set up to rotate any number of degrees
+ */
+/* line 2, ../src/sass/properties/_default.scss */
+.button, .button:link, .button:visited {
+  display: inline-block;
+  margin-bottom: .5em;
+  border-radius: .3em;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1em .75em;
+  letter-spacing: .15em;
+  text-decoration: none;
+}
+/* line 14, ../src/sass/properties/_default.scss */
+.button:link {
+  border-color: #111111;
+  background-color: rgba(255, 255, 255, 0);
+  color: #111111;
+  transition: border .4s, background-color .4s, color .4s;
+}
+/* line 20, ../src/sass/properties/_default.scss */
+.button:visited {
+  border-color: #111111;
+  background-color: rgba(255, 255, 255, 0);
+  color: #111111;
+  transition: border .4s, background-color .4s, color .4s;
+}
+/* line 26, ../src/sass/properties/_default.scss */
+.button:hover, .button:focus {
+  border-color: #0074d9;
+  background-color: rgba(255, 255, 255, 0);
+  color: #0074d9;
+  transition: border .3s, background-color .3s, color .3s;
+}
+/* line 33, ../src/sass/properties/_default.scss */
+.button:active {
+  border-color: #111111;
+  background-color: rgba(255, 255, 255, 0);
+  color: #0074d9;
+  transition: border .3s, background-color .3s, color .3s;
+}
+/* line 5, ../src/sass/properties/_themes.scss */
+.button[theme="black"]:link {
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+/* line 12, ../src/sass/properties/_themes.scss */
+.button[theme="black"]:visited {
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+/* line 19, ../src/sass/properties/_themes.scss */
+.button[theme="black"]:hover, .button[theme="black"]:focus {
+  border-color: #777777;
+  background-color: #777777;
+  color: white;
+}
+/* line 27, ../src/sass/properties/_themes.scss */
+.button[theme="black"]:active {
+  border-color: #999999;
+  background-color: #999999;
+  color: white;
+}
+/* line 36, ../src/sass/properties/_themes.scss */
+.button[theme="black"][modifier~="border"]:link {
+  color: black;
+}
+/* line 41, ../src/sass/properties/_themes.scss */
+.button[theme="black"][modifier~="border"]:visited {
+  color: black;
+}
+/* line 46, ../src/sass/properties/_themes.scss */
+.button[theme="black"][modifier~="border"]:hover, .button[theme="black"][modifier~="border"]:focus {
+  color: #777777;
+}
+/* line 52, ../src/sass/properties/_themes.scss */
+.button[theme="black"][modifier~="border"]:active {
+  color: #999999;
+}
+/* line 5, ../src/sass/properties/_themes.scss */
+.button[theme="blue"]:link {
+  border-color: #0074d9;
+  background-color: #0074d9;
+  color: white;
+}
+/* line 12, ../src/sass/properties/_themes.scss */
+.button[theme="blue"]:visited {
+  border-color: #0074d9;
+  background-color: #0074d9;
+  color: white;
+}
+/* line 19, ../src/sass/properties/_themes.scss */
+.button[theme="blue"]:hover, .button[theme="blue"]:focus {
+  border-color: #0063aa;
+  background-color: #0063aa;
+  color: white;
+}
+/* line 27, ../src/sass/properties/_themes.scss */
+.button[theme="blue"]:active {
+  border-color: #001f3f;
+  background-color: #001f3f;
+  color: white;
+}
+/* line 36, ../src/sass/properties/_themes.scss */
+.button[theme="blue"][modifier~="border"]:link {
+  color: #0074d9;
+}
+/* line 41, ../src/sass/properties/_themes.scss */
+.button[theme="blue"][modifier~="border"]:visited {
+  color: #0074d9;
+}
+/* line 46, ../src/sass/properties/_themes.scss */
+.button[theme="blue"][modifier~="border"]:hover, .button[theme="blue"][modifier~="border"]:focus {
+  color: #0063aa;
+}
+/* line 52, ../src/sass/properties/_themes.scss */
+.button[theme="blue"][modifier~="border"]:active {
+  color: #001f3f;
+}
+/* line 5, ../src/sass/properties/_themes.scss */
+.button[theme="gray"]:link {
+  border-color: #f0f0f0;
+  background-color: #f0f0f0;
+  color: #555555;
+}
+/* line 12, ../src/sass/properties/_themes.scss */
+.button[theme="gray"]:visited {
+  border-color: #f0f0f0;
+  background-color: #f0f0f0;
+  color: #555555;
+}
+/* line 19, ../src/sass/properties/_themes.scss */
+.button[theme="gray"]:hover, .button[theme="gray"]:focus {
+  border-color: #dddddd;
+  background-color: #dddddd;
+  color: #444444;
+}
+/* line 27, ../src/sass/properties/_themes.scss */
+.button[theme="gray"]:active {
+  border-color: #cccccc;
+  background-color: #cccccc;
+  color: #444444;
+}
+/* line 36, ../src/sass/properties/_themes.scss */
+.button[theme="gray"][modifier~="border"]:link {
+  color: #f0f0f0;
+}
+/* line 41, ../src/sass/properties/_themes.scss */
+.button[theme="gray"][modifier~="border"]:visited {
+  color: #f0f0f0;
+}
+/* line 46, ../src/sass/properties/_themes.scss */
+.button[theme="gray"][modifier~="border"]:hover, .button[theme="gray"][modifier~="border"]:focus {
+  color: #dddddd;
+}
+/* line 52, ../src/sass/properties/_themes.scss */
+.button[theme="gray"][modifier~="border"]:active {
+  color: #cccccc;
+}
+/* line 6, ../src/sass/properties/_sizes.scss */
+.button[size~="xsmall"] {
+  font-size: 0.382rem;
+}
+/* line 6, ../src/sass/properties/_sizes.scss */
+.button[size~="small"] {
+  font-size: 0.618rem;
+}
+/* line 6, ../src/sass/properties/_sizes.scss */
+.button[size~="default"] {
+  font-size: 1rem;
+}
+/* line 6, ../src/sass/properties/_sizes.scss */
+.button[size~="medium"] {
+  font-size: 1.618rem;
+}
+/* line 6, ../src/sass/properties/_sizes.scss */
+.button[size~="large"] {
+  font-size: 2.618rem;
+}
+/* line 6, ../src/sass/properties/_sizes.scss */
+.button[size~="xlarge"] {
+  font-size: 4.236rem;
+}
+/* line 3, ../src/sass/properties/_modifiers.scss */
+.button[modifier~="full"], .button[modifier~="full"]:link {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+@media screen and (min-width: 32em) {
+  /* line 2, ../src/sass/properties/_modifiers.scss */
+  .button[modifier~="full"] {
+    max-width: 16em;
+  }
+}
+/* line 15, ../src/sass/properties/_modifiers.scss */
+.button[modifier~="square"] {
+  border-radius: 0;
+}
+/* line 18, ../src/sass/properties/_modifiers.scss */
+.button[modifier~="oval"] {
+  border-radius: 2em;
+}
+/* line 21, ../src/sass/properties/_modifiers.scss */
+.button[modifier~="border"] {
+  border-width: 2px;
+}
+/* line 23, ../src/sass/properties/_modifiers.scss */
+.button[modifier~="border"]:link, .button[modifier~="border"]:visited, .button[modifier~="border"]:hover, .button[modifier~="border"]:focus, .button[modifier~="border"]:active {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=assembler-buttons.css.map */
