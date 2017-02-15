@@ -1,5 +1,7 @@
 # Assembler Buttons
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/AssemblerUI/assembler-buttons.svg)](https://greenkeeper.io/)
+
 A buttons component built for the Assembler framework.
 
 ## Table of contents
